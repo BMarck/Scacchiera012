@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
@@ -24,6 +25,12 @@
                </children>
             </HBox>
             <TextArea fx:id="txtResult" editable="false" />
+            <HBox>
+               <children>
+                  <ProgressBar fx:id="pBar" prefHeight="18.0" prefWidth="211.0" progress="0.0" />
+                  <Label fx:id="lblStatus" prefHeight="17.0" prefWidth="260.0" text="Label" />
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

@@ -1,5 +1,7 @@
 package it.polito.tdp.scacchiera.model;
 
+import javafx.concurrent.Task;
+
 public class Ricerca {
 
 	int conta;
@@ -34,6 +36,7 @@ public class Ricerca {
 
 			Pos p = sc.getPosizioni().get(fatto);
 
+			
 			if (tentativoValido(sc, p, 0)) {
 				sc.set(p, 0);
 				cerca(sc, fatto + 1);
