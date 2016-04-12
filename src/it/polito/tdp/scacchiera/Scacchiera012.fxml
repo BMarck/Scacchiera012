@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.scacchiera.ScacchieraController">
+   <top>
+      <Label text="Scacchiera 012" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Dimensione scacchiera" />
+                  <Spinner fx:id="spinSize" />
+                  <Button mnemonicParsing="false" onAction="#doCalcola" text="Calcola" />
+               </children>
+            </HBox>
+            <TextArea fx:id="txtResult" editable="false" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

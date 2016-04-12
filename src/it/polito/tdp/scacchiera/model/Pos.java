@@ -1,4 +1,4 @@
-package it.polito.tdp.scacchiera;
+package it.polito.tdp.scacchiera.model;
 
 public class Pos {
 	

@@ -1,4 +1,4 @@
-package it.polito.tdp.scacchiera;
+package it.polito.tdp.scacchiera.model;
 
 public class Ricerca {
 
@@ -23,10 +23,12 @@ public class Ricerca {
 			// soluzione trovata!!!
 			this.conta++;
 
+			/*
 			System.out.println("\nTrovata " + conta);
 
 			for (Pos p : sc.getPosizioni())
 				System.out.format("%d %d -> %d\n", p.getRiga(), p.getCol(), sc.get(p));
+				*/
 
 		} else {
 
